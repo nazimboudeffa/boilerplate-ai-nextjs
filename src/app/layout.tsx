@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Psychoia',
-  description: 'Votre psychanalyste artificiel',
+  title: 'Psychoanalysis and AI',
+  description: 'Psychoanalysis powered with AI',
 }
 
 export default function RootLayout({

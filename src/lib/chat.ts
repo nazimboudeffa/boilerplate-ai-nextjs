@@ -10,6 +10,10 @@ export async function promptChatGPT( apiKey : string, prompt: string, document: 
   const VECTOR_STORE_PATH = "./src/documents/"+document+"-data-index";
   let vectorStore;
 
+  console.log(apiKey)
+  console.log(prompt)
+  console.log(document)
+
   console.log("Loading existing vector store...");
   vectorStore = await HNSWLib.load(
     VECTOR_STORE_PATH,
@@ -20,7 +24,7 @@ export async function promptChatGPT( apiKey : string, prompt: string, document: 
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
 
   console.log("Creating retrieval chain...");
-  const result = await chain.call({ query: prompt });
+  const result = await chain.invoke({ query: prompt });
   console.log("Result:", result);
   return result
 }
