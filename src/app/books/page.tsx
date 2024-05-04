@@ -28,8 +28,8 @@ const Books = function () {
     return (
         <div className="mt-10 flex flex-col items-center justify-center w-full h-full">
         <Header
-            heading="Notre liste de livres"
-            subheading="Vous pouvez intéragir dès à présent avec ces livres"
+            heading="Interract with books"
+            subheading="You can choose a book and start interacting with it"
         />
         <section className="flex flex-col items-center gap-10">
         <div className="ml-5 mr-5 mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">

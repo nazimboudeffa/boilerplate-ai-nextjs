@@ -8,12 +8,12 @@ export default async function ChatGPTWithX() {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center w-full h-full">
             <Header
-                heading="Psychanalyse et IA"
-                subheading="Propulsé par ChatGPT"
+                heading="Psychoanalyse and AI"
+                subheading="Powered by ChatGPT"
             />
             <div className="flex flex-row justify-between gap-2">
             <Button asChild>
-                <Link href="/books">Explorer</Link>
+                <Link href="/books">Interract with books</Link>
             </Button>
             <Link href="https://fr.tipeee.com/nazimboudeffa" passHref={true}>                   
                 <Image
