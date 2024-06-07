@@ -1,4 +1,4 @@
-# Psychoanalysis AI
+# Boilerplate AI
 
 You can find the books on https://github.com/nazimboudeffa/ai-vector-store-docs
 
